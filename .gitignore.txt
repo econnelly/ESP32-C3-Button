@@ -1,0 +1,4 @@
+.git
+*.lck
+fp-info-cache
+ESP32-C3-Button-backups/
