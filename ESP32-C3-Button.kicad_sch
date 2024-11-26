@@ -2437,6 +2437,12 @@
 		(uuid "24d1d2fb-8217-45a5-9199-89ada44ba2e9")
 	)
 	(junction
+		(at 138.43 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "273307be-c2e1-44b6-8c2f-a72b74f372ad")
+	)
+	(junction
 		(at 139.7 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2584,6 +2590,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 31.75) (xy 128.27 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f8f2242-b7d8-4214-805b-712f28519d62")
+	)
+	(wire
+		(pts
 			(xy 96.52 118.11) (xy 96.52 125.73)
 		)
 		(stroke
@@ -2631,6 +2647,16 @@
 			(type default)
 		)
 		(uuid "5229f607-0562-453f-851e-cedc558b0eda")
+	)
+	(wire
+		(pts
+			(xy 135.89 31.75) (xy 138.43 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60d7ef20-7e27-49a8-9531-dacd5240f6e4")
 	)
 	(wire
 		(pts
@@ -2721,6 +2747,16 @@
 			(type default)
 		)
 		(uuid "8eba5764-af25-4c36-ba80-ac9a5183467b")
+	)
+	(wire
+		(pts
+			(xy 138.43 31.75) (xy 138.43 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917da0fe-3d51-4dfc-ba98-b4093febfce2")
 	)
 	(wire
 		(pts
@@ -2914,7 +2950,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 30.48) (xy 138.43 34.29)
+			(xy 138.43 30.48) (xy 138.43 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3727,7 +3763,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 138.43 74.9299 0)
 			(effects
 				(font
@@ -3863,7 +3899,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0.1uF"
 			(at 193.04 39.3699 0)
 			(effects
 				(font
@@ -3872,7 +3908,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 190.1952 41.91 0)
 			(effects
 				(font
@@ -3909,6 +3945,141 @@
 			(project "ESP32-C3-Button"
 				(path "/354bd456-f2c1-4a6a-80e4-72e8feeb976c"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.73 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80ba1ce0-051c-414e-8936-0370d9d81e76")
+		(property "Reference" "#PWR015"
+			(at 119.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 31.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3861a910-fbf3-46cb-a957-23228cce76dc")
+		)
+		(instances
+			(project "ESP32-C3-Button"
+				(path "/354bd456-f2c1-4a6a-80e4-72e8feeb976c"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 132.08 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "924ff991-ef58-4423-9bec-ac0b3dbb4ff0")
+		(property "Reference" "C5"
+			(at 132.08 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 132.08 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 30.7848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 132.08 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e70bd034-4fa1-46fc-83f3-3214d1dd548f")
+		)
+		(pin "2"
+			(uuid "eaea783c-cd47-48ca-b451-408c8d9e6acc")
+		)
+		(instances
+			(project ""
+				(path "/354bd456-f2c1-4a6a-80e4-72e8feeb976c"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -3999,7 +4170,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0.1uF"
 			(at 182.88 39.3699 0)
 			(effects
 				(font
@@ -4008,7 +4179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 180.0352 41.91 0)
 			(effects
 				(font
@@ -4201,7 +4372,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "10uF"
 			(at 172.72 39.3699 0)
 			(effects
 				(font
@@ -4210,7 +4381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 169.8752 41.91 0)
 			(effects
 				(font
@@ -4450,7 +4621,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0.1uF"
 			(at 139.7 88.8999 0)
 			(effects
 				(font
@@ -4459,7 +4630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 136.8552 91.44 0)
 			(effects
 				(font
